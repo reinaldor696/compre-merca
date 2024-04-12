@@ -188,6 +188,7 @@ function sectionSetupAccount() {
     spinDaily.style.display = "none";
 
     closeMenuNav()
+    closeMenuPanelControl()
 }
 
 function sectionPasswordPopUp() {
@@ -559,6 +560,7 @@ function sectionSpinDailyFromMenu() {
 
     menuNavHeader();
     closeMenuNav()
+    closeMenuPanelControl()
 }
 
 function menuPanelControl() {
@@ -599,6 +601,11 @@ function closeMenuPanelControl() {
     for (const menuDisplayPanelControl of menuDisplayPanelControls) {
         if (menuDisplayPanelControl.style.display === "block") {
             menuDisplayPanelControl.style.display = "none";
+            menuPanelControlTitle.style.color = "#000";
+
+            for (const path of pathElements) {
+                path.setAttribute("fill", "black");
+            }
         } 
     }  
 }
