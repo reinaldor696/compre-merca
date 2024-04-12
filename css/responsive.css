@@ -1443,7 +1443,7 @@ header {
 .menu-panel-control {
     display: flex;
     flex-direction: row;
-    gap: 2.088vw;
+    gap: 34vw;
     align-items: center;
     margin: 3.758vw 0 6.681vw 0;
     width: 77.871vw;
@@ -1455,9 +1455,33 @@ header {
     font-weight: 400;
     line-height: 120%;
 }
-.menu-panel-control svg {
-    width: 3.34vw;
-    height: 2.714vw;
+
+.svg1-menu-panel-control {
+    width: 4.175vw;
+    height: 4.175vw;
+}
+
+#button-back-panel-control {
+    cursor: pointer;
+    width: 6.472vw;
+    height: 6.472vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 104.384vw;
+    border: 0.209vw solid #E6E6E6;
+}
+#button-back-panel-control svg {
+    width: 1.461vw;
+    height: 2.296vw;
+}
+
+.menu-panel-control-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.088vw;
 }
 
 .menu-display-user-account {
@@ -1469,7 +1493,7 @@ header {
     background: #FFF;
     position: absolute;
     padding: 5.01vw 9.9vw 9.603vw 10.856vw;
-    margin: 15.031vw 15.866vw 0 0px;
+    margin: 15.031vw 0 0 15.866vw;
     z-index: 5;
 }
 .menu-display-user-account ul {
@@ -3343,6 +3367,31 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.button-back-product-descriptio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.132vw;
+    width: 75.574vw;
+   margin-bottom: 7.307vw;
+}
+
+#button-back-product-description {
+    cursor: pointer;
+    width: 6.472vw;
+    height: 6.472vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 104.384vw;
+    border: 0.209vw solid #E6E6E6;
+}
+#button-back-product-description svg {
+    width: 1.461vw;
+    height: 2.296vw;
 }
 
 .border-title-product-description {

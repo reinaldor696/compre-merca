@@ -725,3 +725,8 @@ function buttonAddCartShopping() {
         counterItemNumber2.style.color = "#057A10";
     }
 }
+
+function buttonBackPanelControl() {
+    history.back();
+    console.log(history)
+}
