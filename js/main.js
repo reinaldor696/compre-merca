@@ -595,6 +595,14 @@ function menuPanelControl() {
     }    
 }
 
+function closeMenuPanelControl() {
+    for (const menuDisplayPanelControl of menuDisplayPanelControls) {
+        if (menuDisplayPanelControl.style.display === "block") {
+            menuDisplayPanelControl.style.display = "none";
+        } 
+    }  
+}
+
 function buttonMyAccountPanelControl() {
     contentPanelControl.style.display = "block";
     userAccount.style.display = "flex";
@@ -656,12 +664,15 @@ function menuNavBarMquery() {
 
     document.body.style.overflow = "hidden";
 
+    
     if(topDealProductMenuNavMquery.style.display === "flex") {
         topDealProductMenuNavMquery.style.display = "none";
     }
     if(myProfileOptionsMenuNavMquery.style.display === "flex") {
         myProfileOptionsMenuNavMquery.style.display ="none";
     }
+
+    closeMenuPanelControl();
 }
 
 function closeMenuNavBarMquery() {
