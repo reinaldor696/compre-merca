@@ -5293,6 +5293,7 @@ header {
 .button-back-product-descriptio-container {
     display: none;
 }
+
 /* Product Description End */
 
 /* Categories */
@@ -5428,6 +5429,14 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+#button-filter-categories-mquery {
+    display: none;
+}
+
+.button-filter-categories-mquery{
+    display: none;
 }
 
 .input-categories {
@@ -5617,6 +5626,7 @@ header {
     width: .9375vw;
     height: .9375vw;
 }
+
 
 .search-categories {
     display: flex;
@@ -6023,9 +6033,6 @@ header {
     height: 1.041667vw;
 }
 
-#button-filter-categories-mquery {
-    display: none;
-}
 .svg-search-categories-container {
     display: none;
 }

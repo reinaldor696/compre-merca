@@ -3827,121 +3827,123 @@
 
             <div class="content-categories">
               <div class="content1-categories">
-                <button class="button-filter-categories">
+                <button id="button-filter-categories1" class="button-filter-categories">
                   <p>Filter</p>
 
                   <img src="./media/icons/content-categories/Filter 24px.png" alt="icon">
                 </button>
-                
-                <div onclick="buttonSpecialCategory()" class="special-category">
-                  <h2>Categorías Principales</h2>
 
-                  <img src="./media/icons/content-categories/Vector.png" alt="arrow" id="img-arrow-categories1"
-                  class="img-arrow-categories">
-                </div>
-                
-                <span id="special-category-list">
-                  <div class="checked-input-categories">
-                    <input type="checkbox" checked>
+                <span id="filter-categories-mquery">
+                  <div onclick="buttonSpecialCategory()" class="special-category">
+                    <h2>Categorías Principales</h2>
   
-                    <p>Alimentación <span>(134)</span></p>
+                    <img src="./media/icons/content-categories/Vector.png" alt="arrow" id="img-arrow-categories1"
+                    class="img-arrow-categories">
                   </div>
-  
-                  <div class="input-categories margin-categories">
-                    <input type="checkbox">
-  
-                    <p>Higiene <span>(54)</span></p>
-                  </div>
-  
-                  <div class="input-categories">
-                    <input type="checkbox">
-  
-                    <p>Transporte <span>(47)</span></p>
-                  </div>
-  
-                  <div class="input-categories margin-categories">
-                    <input type="checkbox">
-  
-                    <p>Construcción <span>(43)</span></p>
-                  </div>
-  
-                  <div class="input-categories">
-                    <input type="checkbox">
-  
-                    <p>Limpieza <span>(38)</span></p>
-                  </div>
-                </span>
-
-                <div class="border-categories"></div>
-
-                <div onclick="buttonSubcategoryList()" class="subcategory">
-                  <p>Subcategorías</p>
-
-                  <img src="./media/icons/content-categories/Vector.png" alt="arrow" 
-                  id="img-arrow-categories2" class="img-arrow-categories">
-                </div>
-
-                <span id="subcategory-list">
-                  <div class="input-categories margin-categories">
-                    <input type="checkbox">
-  
-                    <p>Carne <span>(134)</span></p>
-                  </div>
-  
-                  <div class="checked-input-categories">
-                    <input type="checkbox" checked>
-  
-                    <p>Pescado <span>(150)</span></p>
-                  </div>
-  
-                  <div class="input-categories margin-categories">
-                    <input type="checkbox">
-  
-                    <p>Verduras <span>(54)</span></p>
-                  </div>
-  
-                  <div class="input-categories">
-                    <input type="checkbox">
-  
-                    <p>Fruta <span>(47)</span></p>
-                  </div>
-  
-                  <div class="input-categories margin-categories">
-                    <input type="checkbox">
-  
-                    <p>Snacks <span>(43)</span></p>
-                  </div>
-  
-                  <div class="input-categories">
-                    <input type="checkbox">
-  
-                    <p>Postres <span>(38)</span></p>
-                  </div>
-                </span>
-
-                <div>
-                  <div onclick="buttoPriceCategoriesList()" class="price-categories">
-                    <h2>Price</h2>
-
-                    <img src="./media/icons/content-categories/Vector.png" alt="arrow" 
-                    id="img-arrow-categories3" class="img-arrow-categories">
-                  </div>
-
-                  <span id="price-categories-list">
-                    <div class="border-price-categories">
-                    
-                      <div class="border-price-categories-line">
-                        <div class="border-price-categories-point"></div>
-  
-                        <div class="border-price-categories-point"></div>
-                      </div>
+                  
+                  <span id="special-category-list">
+                    <div class="checked-input-categories">
+                      <input type="checkbox" checked>
+    
+                      <p>Alimentación <span>(134)</span></p>
                     </div>
-                      
-                    <p class="price-range">Price: <span>50 — 1,500</span></p>
-  
+    
+                    <div class="input-categories margin-categories">
+                      <input type="checkbox">
+    
+                      <p>Higiene <span>(54)</span></p>
+                    </div>
+    
+                    <div class="input-categories">
+                      <input type="checkbox">
+    
+                      <p>Transporte <span>(47)</span></p>
+                    </div>
+    
+                    <div class="input-categories margin-categories">
+                      <input type="checkbox">
+    
+                      <p>Construcción <span>(43)</span></p>
+                    </div>
+    
+                    <div class="input-categories">
+                      <input type="checkbox">
+    
+                      <p>Limpieza <span>(38)</span></p>
+                    </div>
                   </span>
-                </div>
-
+  
+                  <div class="border-categories"></div>
+  
+                  <div onclick="buttonSubcategoryList()" class="subcategory">
+                    <p>Subcategorías</p>
+  
+                    <img src="./media/icons/content-categories/Vector.png" alt="arrow" 
+                    id="img-arrow-categories2" class="img-arrow-categories">
+                  </div>
+  
+                  <span id="subcategory-list">
+                    <div class="input-categories margin-categories">
+                      <input type="checkbox">
+    
+                      <p>Carne <span>(134)</span></p>
+                    </div>
+    
+                    <div class="checked-input-categories">
+                      <input type="checkbox" checked>
+    
+                      <p>Pescado <span>(150)</span></p>
+                    </div>
+    
+                    <div class="input-categories margin-categories">
+                      <input type="checkbox">
+    
+                      <p>Verduras <span>(54)</span></p>
+                    </div>
+    
+                    <div class="input-categories">
+                      <input type="checkbox">
+    
+                      <p>Fruta <span>(47)</span></p>
+                    </div>
+    
+                    <div class="input-categories margin-categories">
+                      <input type="checkbox">
+    
+                      <p>Snacks <span>(43)</span></p>
+                    </div>
+    
+                    <div class="input-categories">
+                      <input type="checkbox">
+    
+                      <p>Postres <span>(38)</span></p>
+                    </div>
+                  </span>
+  
+                  <div>
+                    <div onclick="buttoPriceCategoriesList()" class="price-categories">
+                      <h2>Price</h2>
+  
+                      <img src="./media/icons/content-categories/Vector.png" alt="arrow" 
+                      id="img-arrow-categories3" class="img-arrow-categories">
+                    </div>
+  
+                    <span id="price-categories-list">
+                      <div class="border-price-categories">
+                      
+                        <div class="border-price-categories-line">
+                          <div class="border-price-categories-point"></div>
+    
+                          <div class="border-price-categories-point"></div>
+                        </div>
+                      </div>
+                        
+                      <p class="price-range">Price: <span>50 — 1,500</span></p>
+    
+                    </span>
+                  </div>
+                </span>
+                
                 <div class="recently-add">
                   <h2>Añadido recientemente</h2>
 
@@ -3977,25 +3979,25 @@
 
               <div class="content2-categories">
                 <div class="search-categories">
-                  <button id="button-filter-categories-mquery" class="button-filter-categories">
+                  <button onclick="buttonFilterCategoriesMquery()" id="button-filter-categories-mquery">
                   <p>Filter</p>
 
                   <img src="./media/icons/content-categories/Filter 24px.png" alt="icon">
                 </button>
 
-                  <div class="search-categories-container">
-                    <img src="./media/icons/content-categories/Search 1.png" alt="search">
+                <div class="search-categories-container">
+                  <img src="./media/icons/content-categories/Search 1.png" alt="search">
 
-                    <input type="text" placeholder="Search...">
-                  </div>
+                  <input type="text" placeholder="Search...">
+                </div>
 
-                  <span class="search-result-found-mquery">
-                    <svg class="svg-search-categories-container" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <span class="search-result-found-mquery">
+                  <svg class="svg-search-categories-container" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79372 5.7932C5.2365 6.35042 4.79448 7.01195 4.49292 7.74C4.19135 8.46805 4.03613 9.24836 4.03613 10.0364C4.03613 10.8244 4.19135 11.6048 4.49292 12.3328C4.79448 13.0609 5.2365 13.7224 5.79372 14.2796C6.35095 14.8368 7.01247 15.2788 7.74052 15.5804C8.46857 15.882 9.24889 16.0372 10.0369 16.0372C10.825 16.0372 11.6053 15.882 12.3333 15.5804C13.0614 15.2788 13.7229 14.8368 14.2801 14.2796C15.3731 13.148 15.9778 11.6324 15.9642 10.0592C15.9505 8.48601 15.3195 6.98114 14.207 5.86869C13.0946 4.75624 11.5897 4.12523 10.0165 4.11155C8.44335 4.09788 6.92774 4.70265 5.79612 5.7956M13.4329 13.4324C12.989 13.8863 12.4595 14.2476 11.875 14.4954C11.2905 14.7432 10.6626 14.8726 10.0278 14.8761C9.39292 14.8796 8.76367 14.7571 8.17648 14.5158C7.58928 14.2744 7.0558 13.9189 6.60693 13.47C6.15805 13.021 5.80269 12.4875 5.56143 11.9003C5.32017 11.313 5.19781 10.6838 5.20141 10.0489C5.20502 9.41404 5.33454 8.78621 5.58246 8.20175C5.83037 7.61729 6.19177 7.08782 6.64572 6.644C7.54934 5.76054 8.76491 5.26907 10.0286 5.27626C11.2923 5.28344 12.5022 5.78869 13.3958 6.68237C14.2893 7.57604 14.7943 8.78603 14.8013 10.0497C14.8082 11.3135 14.3165 12.5289 13.4329 13.4324Z" fill="black"/>
                       <path d="M13.4306 15.1522C13.2056 14.927 13.0792 14.6217 13.0793 14.3033C13.0795 13.985 13.206 13.6798 13.4312 13.4548C13.6564 13.2297 13.9617 13.1034 14.28 13.1035C14.5983 13.1036 14.9036 13.2302 15.1286 13.4554L18.5222 16.8502C18.6368 16.9609 18.7282 17.0933 18.7911 17.2397C18.854 17.3861 18.8871 17.5435 18.8885 17.7029C18.8899 17.8622 18.8595 18.0202 18.7992 18.1677C18.7388 18.3152 18.6497 18.4492 18.5371 18.5618C18.4244 18.6745 18.2904 18.7636 18.1429 18.8239C17.9955 18.8843 17.8374 18.9146 17.6781 18.9133C17.5188 18.9119 17.3613 18.8788 17.2149 18.8159C17.0685 18.753 16.9361 18.6616 16.8254 18.547L13.4306 15.1522Z" fill="black"/>
-                    </svg>
-  
-                    <p><span>52</span> Results Found</p>
+                  </svg>
+
+                  <p><span>52</span> Results Found</p>
                   </span>
                 </div>
 

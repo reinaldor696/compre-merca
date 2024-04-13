@@ -3377,6 +3377,13 @@ header {
     width: 75.574vw;
    margin-bottom: 7.307vw;
 }
+.button-back-product-descriptio-container p {
+    color: #000;
+    font-size: 2.923vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
 
 #button-back-product-description {
     cursor: pointer;
@@ -3689,11 +3696,168 @@ header {
 }
 
 .content1-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+
+#filter-categories-mquery {
+    display: none;
+    position: absolute;
+    width: 77.871vw;
+    height: 164.927vw;
+    border-radius: 1.879vw;
+    border: 0.209vw solid #808080;
+    background: #FFF;
+    flex-direction: column;
+    margin-top: 13.57vw;
+    padding: 5.219vw 0 0 5.428vw;
+}
+
+.special-category {
+    width: 65.136vw;
+    margin: 0 0 4.175vw 0;
+}
+.special-category h2 {
+    font-size: 4.175vw;
+}
+
+.margin-categories {
+    margin: 4.175vw 0;
+}
+
+.border-categories {
+    width: 64.509vw;
+    height: 1.044vw;
+    margin: 0 0 1.879vw 0;
+}
+
+#special-category-list {
+    margin-bottom: 12.109vw;
+}
+
+.img-arrow-categories {
+    height: 1.253vw;
+    width: 2.505vw;
+    object-fit: contain;
+}
+
+.subcategory {
+    width: 65.136vw;
+}
+.subcategory p{
+    font-size: 4.175vw;
+}
+
+.checked-input-categories input {
+    width: 4.175vw;
+    height: 4.175vw;
+    border-radius: 104.384vw;
+}
+.checked-input-categories input:checked {
+    background-color: transparent;
+
+    &::after {
+    content: "";
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    width: 2.4vw;
+    height: 2.4vw;
+    background-color: #00B207;
+    border-radius: 50%;
+    } 
+}
+.checked-input-categories p {
+    font-size: 2.923vw;
+    margin-left: 1.67vw;
+}
+.checked-input-categories span {
+    font-size: 2.923vw; 
+}
+
+.input-categories input {
+    width: 4.175vw;
+    height: 4.175vw;
+}
+.input-categories p {
+    font-size: 2.923vw;
+    margin-left: 1.67vw;
+}
+.input-categories span {
+    font-size: 2.923vw;
+}
+.input-categories input:checked {
+    background-color: transparent;
+
+    &::after {
+    content: "";
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    width: 2.4vw;
+    height: 2.4vw;
+    background-color: #00B207;
+    border-radius: 50%;
+    } 
+}
+
+.border-price-categories {
+    width: 65.136vw;
+    height: 1.253vw;
+    border-radius: 3.132vw;
+}
+
+.border-price-categories-line {
+    width: 41.754vw;
+    height: 1.253vw;
+    margin-left: 6.889vw;
+    border-radius: 3.132vw;
+}
+
+.border-price-categories-point {
+    width: 3.758vw;
+    height: 3.758vw;
+    border: 0.418vw solid #00B207;
+}
+
+.price-range {
+    font-size: 2.923vw;
+    margin: 3.34vw 0 0 0;
+}
+.price-range span {
+    font-size: 2.923vw;
+}
+
+.price-categories {
+    width: 65.136vw;
+    margin: 6.367vw 0 4.175vw 0;
+}
+.price-categories h2 {
+    font-size: 4.175vw;
+}
+
+.recently-add {
+    display: none;
+}
+.content-recently-add {
     display: none;
 }
 
 #button-filter-categories-mquery {
     display: flex;
+    width: 20.459vw;
+    height: 7.516vw;
+    padding: 0;
+    gap: 2.505vw;
+    border-radius: 8.977vw;
+    padding: 2.505vw 6.681vw;
+    justify-content: center;
+    align-items: center;
+    background: #00B207;
+    cursor: pointer;
+    border: none;
 }
 #button-filter-categories-mquery p {
     color: #FFF;
@@ -3702,15 +3866,27 @@ header {
     font-weight: 600;
     line-height: 120%;
 }
+#button-filter-categories-mquery img {
+    width: 3.193vw;
+    height: 2.714vw;
+    object-fit: contain;
+}
+
 .button-filter-categories {
     width: 20.459vw;
     height: 7.516vw;
     padding: 0;
     gap: 2.505vw;
+    border-radius: 8.977vw;
 }
 .button-filter-categories img {
     width: 3.193vw;
     height: 2.714vw;
+    object-fit: contain;
+}
+
+#button-filter-categories1 {
+    display: none;
 }
 
 .search-categories {
@@ -4002,6 +4178,10 @@ header {
     width: 4.175vw;
     height: 4.175vw;
 }
+
+
+
+
 /* Categories End */
 
 /* Reward Zone */

@@ -39,6 +39,7 @@ const subcategoryList = document.querySelector("#subcategory-list");
 const subcategoryListArrow = document.querySelector("#img-arrow-categories2");
 const priceCategoriesList  = document.querySelector("#price-categories-list");
 const priceCategoriesListArrow  = document.querySelector("#img-arrow-categories3");
+const filterCategoriesMquery = document.querySelector("#filter-categories-mquery");
 
 window.onload = function() {
     onLoad.style.display = "flex";
@@ -79,8 +80,8 @@ function sectionSingIn() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNavBarMquery()
-    closeMenuNav()
+    closeMenuNavBarMquery();
+    closeMenuNav();
 }
 
 function signUp() {
@@ -123,7 +124,7 @@ function sectionUserAccount() {
         userAccount.style.display = "flex";
         spanMenuPanelControlContainer.style.display = "flex";
 
-        closeMenuNavBarMquery()
+        closeMenuNavBarMquery();
     }
 
     homeSection.style.display = "none";
@@ -140,13 +141,13 @@ function sectionUserAccount() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNav()
+    closeMenuNav();
 }
 
 function closeMenuNav() {
     if(menuButton.style.display = "block") {
-        menuButton.style.display = "none"
-        document.body.style.overflow = "auto"
+        menuButton.style.display = "none";
+        document.body.style.overflow = "auto";
     }
 }
 
@@ -171,7 +172,7 @@ function sectionUserAccountFromMenu() {
 }
 
 function sectionSetupAccount() {
-    setupAccount.style.display = "block"
+    setupAccount.style.display = "block";
 
     homeSection.style.display = "none";
     signInSection.style.display = "none";
@@ -187,8 +188,8 @@ function sectionSetupAccount() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNav()
-    closeMenuPanelControl()
+    closeMenuNav();
+    closeMenuPanelControl();
 }
 
 function sectionPasswordPopUp() {
@@ -203,7 +204,7 @@ function sectionPasswordChangedPopUp() {
 }
 
 function sectionHistorialOrder() {
-    historialOrder.style.display = "block"
+    historialOrder.style.display = "block";
 
     button3SelectedMenuDisplayUser.style.color = "#057A10";
     button2SelectedMenuDisplayUser.style.color = "#000";
@@ -225,7 +226,7 @@ function sectionHistorialOrder() {
     spinDaily.style.display = "none";
 
     if (window.matchMedia("(max-width: 479px)").matches) {
-        menuPanelControl()
+        menuPanelControl();
     }
 }
 
@@ -246,7 +247,7 @@ function sectionShoppingCart() {
     } else {
         shoppingCart.style.display = "flex";
 
-        closeMenuNavBarMquery()
+        closeMenuNavBarMquery();
     }
 
     homeSection.style.display = "none";
@@ -264,7 +265,7 @@ function sectionShoppingCart() {
     spinDaily.style.display = "none";
     spanMenuPanelControlContainer.style.display = "none";
 
-    closeMenuNav()
+    closeMenuNav();
 }
 
 function sectionAboutUs() {
@@ -290,8 +291,8 @@ function sectionAboutUs() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNavBarMquery()
-    closeMenuNav()
+    closeMenuNavBarMquery();
+    closeMenuNav();
 }
 
 function sectionAboutUsFromMenu() {
@@ -331,7 +332,7 @@ function sectionProductDescription() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNav()
+    closeMenuNav();
 }
 
 function sectionCategories() {
@@ -352,8 +353,9 @@ function sectionCategories() {
     spinDaily.style.display = "none";
     spanMenuPanelControlContainer.style.display = "none";
 
-    closeMenuNav()
-    closeMenuNavBarMquery()
+    closeMenuNav();
+    closeMenuNavBarMquery();
+    closeButtonFilterCategories();
 
     if(categories.style.display === "block") {
         specialCategoryList.style.display = "none";
@@ -413,8 +415,8 @@ function sectionRewardZone() {
         button1SelectedMenuDisplayUser.style.color = "#000";
         button4SelectedMenuDisplayUser.style.color = "#057A10";
 
-        closeMenuNavBarMquery()
-        menuPanelControl()
+        closeMenuNavBarMquery();
+        menuPanelControl();
 
         for (const menuDisplayPanelControl of menuDisplayPanelControls) {
             if (menuDisplayPanelControl.style.display === "block") {
@@ -448,7 +450,7 @@ function sectionRewardZone() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNav()
+    closeMenuNav();
 }
 
 function sectionContact() {
@@ -475,8 +477,8 @@ function sectionContact() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNavBarMquery()
-    closeMenuNav()
+    closeMenuNavBarMquery();
+    closeMenuNav();
 }
 
 function sectionContactFromMenu() {
@@ -508,7 +510,7 @@ function sectionLoyaltyProgram() {
         loyaltyProgram.style.display = "block";
         spanMenuPanelControlContainer.style.display = "none";
 
-        menuPanelControl()
+        menuPanelControl();
     }
     
     categories.style.display = "none";
@@ -526,8 +528,8 @@ function sectionLoyaltyProgram() {
     contact.style.display = "none";
     spinDaily.style.display = "none";
 
-    closeMenuNavBarMquery()
-    closeMenuNav()
+    closeMenuNavBarMquery();
+    closeMenuNav();
 }
 
 function sectionSpinDailyFromMenu() {
@@ -540,7 +542,7 @@ function sectionSpinDailyFromMenu() {
         button2SelectedMenuDisplayUser.style.color = "#000";
         button1SelectedMenuDisplayUser.style.color = "#000";
 
-        closeMenuNavBarMquery()
+        closeMenuNavBarMquery();
     }
 
     categories.style.display = "none";
@@ -559,8 +561,8 @@ function sectionSpinDailyFromMenu() {
     loyaltyProgram.style.display = "none";
 
     menuNavHeader();
-    closeMenuNav()
-    closeMenuPanelControl()
+    closeMenuNav();
+    closeMenuPanelControl();
 }
 
 function menuPanelControl() {
@@ -635,7 +637,7 @@ function buttonMyAccountPanelControl() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    menuPanelControl()
+    menuPanelControl();
 }
 
 function buttonMyDataPanelControl() {
@@ -663,7 +665,7 @@ function buttonMyDataPanelControl() {
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
-    menuPanelControl()
+    menuPanelControl();
 }
 
 function menuNavBarMquery() {
@@ -680,6 +682,7 @@ function menuNavBarMquery() {
     }
 
     closeMenuPanelControl();
+    closeButtonFilterCategories();
 }
 
 function closeMenuNavBarMquery() {
@@ -728,5 +731,19 @@ function buttonAddCartShopping() {
 
 function buttonBackPanelControl() {
     history.back();
-    console.log(history)
+    console.log(history);
+}
+
+function buttonFilterCategoriesMquery() {
+    if (filterCategoriesMquery.style.display === "block") {
+        filterCategoriesMquery.style.display = "none";
+    } else {
+        filterCategoriesMquery.style.display = "block";
+    }
+}
+
+function closeButtonFilterCategories() {
+    if (filterCategoriesMquery.style.display === "block") {
+        filterCategoriesMquery.style.display = "none";
+    } 
 }
