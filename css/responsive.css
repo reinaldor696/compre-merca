@@ -3128,6 +3128,7 @@ header {
     font-weight: 600;
     line-height: 4.175vw;
     gap: 3.34vw;
+    border-radius: 8.977vw;
 }
 
 .img-close-shopping-cart {
@@ -4276,7 +4277,7 @@ header {
 .your-card-reward-zone {
     width: 78.497vw;
     height: 36.743vw;
-    padding: 4.802vw 4.175vw 5.01vw 7.724vw;
+    padding: 4.802vw 0 5.01vw 7.724vw;
     margin: 0;
     border-radius: 1.67vw;
 }

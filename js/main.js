@@ -356,6 +356,7 @@ function sectionCategories() {
     closeMenuNav();
     closeMenuNavBarMquery();
     closeButtonFilterCategories();
+    closeListCategories();
 
     if(categories.style.display === "block") {
         specialCategoryList.style.display = "none";
@@ -401,6 +402,26 @@ function buttoPriceCategoriesList() {
         priceCategoriesList.style.display = "block";
 
         priceCategoriesListArrow.style.transform = 'rotate(180deg)';
+    }
+}
+
+function closeListCategories() {
+    if (specialCategoryList.style.display === "block") {
+        specialCategoryList.style.display = "none";
+
+        specialCategoryArrow.style.transform = 'rotate(0deg)';
+    }
+
+    if (subcategoryList.style.display === "block") {
+        subcategoryList.style.display = "none";
+
+        subcategoryListArrow.style.transform = 'rotate(0deg)';
+    }
+
+    if (priceCategoriesList.style.display === "block") {
+        priceCategoriesList.style.display = "none";
+
+        priceCategoriesListArrow.style.transform = 'rotate(0deg)';
     }
 }
 
@@ -683,6 +704,7 @@ function menuNavBarMquery() {
 
     closeMenuPanelControl();
     closeButtonFilterCategories();
+    closeListCategories();
 }
 
 function closeMenuNavBarMquery() {
