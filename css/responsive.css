@@ -2824,6 +2824,7 @@ header {
     margin: 6.472vw 0 0 5.219vw;
     width: 79.749vw;
     height: 86.221vw;
+    border-radius: 1.67vw;
 }
 
 .promotional-code-shopping-cart {
@@ -2838,6 +2839,7 @@ header {
     padding: 5.219vw 3.132vw 8.142vw 4.384vw;
     align-items: flex-start;
     margin: 6.263vw 0 0 4.802vw;
+    border-radius: 1.67vw;
 }
 
 .promotional-code-shopping-cart input {
