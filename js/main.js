@@ -41,6 +41,10 @@ const priceCategoriesList  = document.querySelector("#price-categories-list");
 const priceCategoriesListArrow  = document.querySelector("#img-arrow-categories3");
 const filterCategoriesMquery = document.querySelector("#filter-categories-mquery");
 
+function toPage() {
+    window.scrollTo(0, 0);
+};
+
 window.onload = function() {
     onLoad.style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -82,6 +86,7 @@ function sectionSingIn() {
 
     closeMenuNavBarMquery();
     closeMenuNav();
+    toPage();
 }
 
 function signUp() {
@@ -98,6 +103,8 @@ function signUp() {
     contact.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
+
+    toPage();
 }
 
 function sectionSingInFromSignUp() {
@@ -115,6 +122,8 @@ function sectionSingInFromSignUp() {
     contact.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
+
+    toPage();
 }
 
 function sectionUserAccount() {
@@ -142,6 +151,7 @@ function sectionUserAccount() {
     spinDaily.style.display = "none";
 
     closeMenuNav();
+    toPage();
 }
 
 function closeMenuNav() {
@@ -169,6 +179,7 @@ function sectionUserAccountFromMenu() {
     spinDaily.style.display = "none";
 
     menuNavHeader();
+    toPage();
 }
 
 function sectionSetupAccount() {
@@ -190,6 +201,7 @@ function sectionSetupAccount() {
 
     closeMenuNav();
     closeMenuPanelControl();
+    toPage();
 }
 
 function sectionPasswordPopUp() {
@@ -228,6 +240,8 @@ function sectionHistorialOrder() {
     if (window.matchMedia("(max-width: 479px)").matches) {
         menuPanelControl();
     }
+
+    toPage();
 }
 
 function sectionShoppingDetailPopUp() {
@@ -266,6 +280,7 @@ function sectionShoppingCart() {
     spanMenuPanelControlContainer.style.display = "none";
 
     closeMenuNav();
+    toPage();
 }
 
 function sectionAboutUs() {
@@ -293,6 +308,7 @@ function sectionAboutUs() {
 
     closeMenuNavBarMquery();
     closeMenuNav();
+    toPage();
 }
 
 function sectionAboutUsFromMenu() {
@@ -313,6 +329,7 @@ function sectionAboutUsFromMenu() {
     spinDaily.style.display = "none";
 
     menuNavHeader();
+    toPage();
 }
 
 function sectionProductDescription() {
@@ -331,8 +348,10 @@ function sectionProductDescription() {
     aboutUs.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
+    spanMenuPanelControlContainer.style.display = "none";
 
     closeMenuNav();
+    toPage();
 }
 
 function sectionCategories() {
@@ -367,6 +386,8 @@ function sectionCategories() {
         subcategoryListArrow.style.transform = 'rotate(0deg)';
         priceCategoriesListArrow.style.transform = 'rotate(0deg)';
     }
+
+    toPage();
 }
 
 function buttonSpecialCategory() {
@@ -472,6 +493,7 @@ function sectionRewardZone() {
     spinDaily.style.display = "none";
 
     closeMenuNav();
+    toPage();
 }
 
 function sectionContact() {
@@ -500,6 +522,7 @@ function sectionContact() {
 
     closeMenuNavBarMquery();
     closeMenuNav();
+    toPage();
 }
 
 function sectionContactFromMenu() {
@@ -521,6 +544,7 @@ function sectionContactFromMenu() {
     spinDaily.style.display = "none";
 
     menuNavHeader();
+    toPage();
 }
 
 function sectionLoyaltyProgram() {
@@ -551,6 +575,7 @@ function sectionLoyaltyProgram() {
 
     closeMenuNavBarMquery();
     closeMenuNav();
+    toPage();
 }
 
 function sectionSpinDailyFromMenu() {
@@ -584,6 +609,7 @@ function sectionSpinDailyFromMenu() {
     menuNavHeader();
     closeMenuNav();
     closeMenuPanelControl();
+    toPage();
 }
 
 function menuPanelControl() {
@@ -752,8 +778,21 @@ function buttonAddCartShopping() {
 }
 
 function buttonBackPanelControl() {
-    history.back();
-    console.log(history);
+    homeSection.style.display = "block";
+
+    ProductDescription.style.display = "none";
+    signInSection.style.display = "none";
+    signUpSection.style.display = "none";
+    userAccount.style.display = "none";
+    setupAccount.style.display = "none";
+    shoppingCart.style.display = "none";
+    historialOrder.style.display = "none";
+    categories.style.display = "none";
+    rewardZone.style.display = "none";
+    contact.style.display = "none";
+    aboutUs.style.display = "none";
+    loyaltyProgram.style.display = "none";
+    spinDaily.style.display = "none";
 }
 
 function buttonFilterCategoriesMquery() {
