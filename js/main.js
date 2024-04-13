@@ -762,6 +762,8 @@ function buttonFilterCategoriesMquery() {
     } else {
         filterCategoriesMquery.style.display = "block";
     }
+
+    closeListCategories();
 }
 
 function closeButtonFilterCategories() {
