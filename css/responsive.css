@@ -224,9 +224,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 55.566vw;
+    gap: 23.624vw;
     margin: 14.405vw 0 17.159vw 0;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 20.251vw;
 }
 
 .close-bag-menu-nav-button1-mquery {
@@ -244,23 +246,25 @@ header {
 }
 
 .close-bag-menu-nav-button2-mquery {
+    display: none;
     border: none;
     background: transparent;
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.626vw;
 }
 .close-bag-menu-nav-button2-mquery span {
-    color: #F00;
-    text-align: center;
-    font-size: 2.088vw;
+    color: #666;
+    font-size: 3.34vw;
     font-style: normal;
-    font-weight: 500;
-    line-height: 2.088vw;
-    position: absolute;
+    font-weight: 400;
+    line-height: 130%;
 }
-.close-bag-menu-nav-button2-mquery svg {
-    width: 8.094vw;
-    height: 8.094vw;
+.close-bag-menu-nav-button2-mquery img {
+    width: 16.284vw;
+    height: 10.856vw;
+    object-fit: contain;
+    scale: 0.7;
 }
 .buttons-menu-nav-mquery {
     width: 73.069vw;
@@ -341,14 +345,85 @@ header {
     margin: 4.593vw 0;
 }
 
+.buttons-social-login-menu-nav-mquery {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .buttons-social-media-menu-nav-mquery {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    align-items: flex-end;
     width: 74.948vw;
     justify-content: space-between;
     padding-bottom: 6.263vw;
+}
+
+.buttons-login-logout-menu-nav-mquery {
+    margin: 9.6vw 0;
+}
+
+.buttons-login-register-menu-nav-mquery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6.054vw;
+}
+
+.button1-menu-nav-mquery {
+    display: flex;
+    width: 30.48vw;
+    height: 8.559vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11.065vw;
+    border: 0.313vw solid #057A10;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.34vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+    background: transparent;
+}
+.button2-menu-nav-mquery {
+    width: 30.48vw;
+    height: 8.559vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11.065vw;
+    background: #057A10;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.34vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+    border: none;
+}
+
+.button-logout-menu-nav-mquery {
+    display: none;
+}
+.button-logout-menu-nav-mquery button {
+    width: 36.117vw;
+    height: 8.559vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11.065vw;
+    background: #057A10;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.34vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    border: none;
+    cursor: pointer;
 }
 
 .flag-coin-menu-nav-mquery-container {
@@ -2704,6 +2779,7 @@ header {
 .content-shopping-detail-pop-up {
     width: 70.146vw;
     height: 110.438vw;
+    border-radius: 1.67vw;
 }
 
 .info-shopping-detail-pop-up {
@@ -3142,7 +3218,7 @@ header {
     margin: 6.263vw 0 0 4.802vw;
     width: 80.454vw;
     padding: 5.01vw 0 8.142vw 0;
-    height: 105.01vw;
+    height: 111.01vw;
     border-radius: 1.67vw;
 }
 .box-content-payment-container h2 {
@@ -3169,7 +3245,7 @@ header {
     padding-right: 3.288vw;
     box-shadow: 0px 0.209vw 0px 0px #E5E5E5;
     padding-bottom: 2.505vw;
-    margin-left: 5.01vw;
+    margin: 2.505vw 0 0 5.01vw;
 }
 .tickets-obtained-container p {
     font-size: 2.923vw;

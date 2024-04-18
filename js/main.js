@@ -85,6 +85,7 @@ function sectionSingIn() {
     contact.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
+    signUpSection.style.display = "none";
 
     closeMenuNavBarMquery();
     closeMenuNav();
@@ -94,18 +95,21 @@ function sectionSingIn() {
 function signUp() {
     signUpSection.style.display = "flex";
     
-    signInSection.style.display = "none";
-    setupAccount.style.display = "none";
-    historialOrder.style.display = "none";
-    shoppingCart.style.display = "none";
-    aboutUs.style.display = "none";
-    ProductDescription.style.display = "none";
     categories.style.display = "none";
+    homeSection.style.display = "none";
+    signInSection.style.display = "none";
+    userAccount.style.display = "none";
+    setupAccount.style.display = "none";
+    shoppingCart.style.display = "none";
+    historialOrder.style.display = "none";
+    ProductDescription.style.display = "none";
+    onLoad.style.display = "none";
     rewardZone.style.display = "none";
-    contact.style.display = "none";
+    aboutUs.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
 
+    closeMenuNavBarMquery();
     toPage();
 }
 
@@ -747,6 +751,10 @@ function myProfileMenuNavBarMquery() {
     } else {
         myProfileOptionsMenuNavMquery.style.display = "flex";
     }
+
+    if(topDealProductMenuNavMquery.style.display === "flex") {
+        topDealProductMenuNavMquery.style.display = "none";
+    }
 }
 
 function productsMenuNavBarMquery() {
@@ -754,6 +762,10 @@ function productsMenuNavBarMquery() {
         topDealProductMenuNavMquery.style.display = "none";
     } else {
         topDealProductMenuNavMquery.style.display = "flex";
+    }
+
+    if(myProfileOptionsMenuNavMquery.style.display === "flex") {
+        myProfileOptionsMenuNavMquery.style.display = "none";
     }
 }
 
