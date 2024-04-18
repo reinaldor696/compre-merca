@@ -790,7 +790,7 @@ function buttonAddCartShopping() {
     }
 
     if(counterItemNumber > 0) {
-        counterItemNumber2.style.color = "#057A10";
+        counterItemNumber2.style.backgroundColor = "#057A10";
     }
 }
 

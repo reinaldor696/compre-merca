@@ -1258,7 +1258,7 @@ header {
     height: 17.03125vw;
     border: 1px solid #E6E6E6;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .border-content2-container2 {
@@ -1272,6 +1272,20 @@ header {
 
 .stock-flavor-container1, .stock-flavor-container2, .stock-flavor-container3, .stock-flavor-container4, .stock-flavor-container5, .stock-flavor-container6, .stock-flavor-container7, .stock-flavor-container8, .stock-flavor-container9, .stock-flavor-container10 {
     display: none;
+    padding-left: .572917vw;
+    padding-top: 1.458333vw;
+    width: 6.666667vw;
+    height: 11.71875vw;
+    flex-shrink: 0;
+    border-right: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    background: #FFFFFF;
+    flex-direction: column;
+    position: absolute;
+}
+
+.stock-flavor-container11, .stock-flavor-container12, .stock-flavor-container13, .stock-flavor-container14, .stock-flavor-container15, .stock-flavor-container16, .stock-flavor-container17, .stock-flavor-container18, .stock-flavor-container19, .stock-flavor-container20 {
+    display: block;
     padding-left: .572917vw;
     padding-top: 1.458333vw;
     width: 6.666667vw;
@@ -1518,7 +1532,6 @@ header {
 /*img product*/
 .img1-product10-container2, .img1-product9-container2, .img1-product8-container2, .img1-produc7-container2, .stock-products-content4-container2 {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 11.1vw;
@@ -1575,6 +1588,8 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    width: 100%;
+    height: 11.66vw;
 }
 .img1-product-content4-container2 img {
     width: 10vw;
