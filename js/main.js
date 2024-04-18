@@ -40,11 +40,11 @@ const subcategoryListArrow = document.querySelector("#img-arrow-categories2");
 const priceCategoriesList  = document.querySelector("#price-categories-list");
 const priceCategoriesListArrow  = document.querySelector("#img-arrow-categories3");
 const filterCategoriesMquery = document.querySelector("#filter-categories-mquery");
-const stockProductsContainers = document.querySelectorAll('.stock-products-container');
-const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
 const buttonsLoginRegisterMenuNavMquery = document.querySelector(".buttons-login-register-menu-nav-mquery");
 const buttonLogoutMenuNavMquery = document.querySelector(".button-logout-menu-nav-mquery");
 const closeBagMenuNavButton2Mquery = document.querySelector(".close-bag-menu-nav-button2-mquery");
+const stockProductsContainers = document.querySelectorAll('.stock-products-container');
+const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
 
 function toPage() {
     window.scrollTo(0, 0);
@@ -845,20 +845,22 @@ function logoutMqueryMenu() {
     closeMenuNavBarMquery();
 }
 
+function showStockFlavorContainer(productContainer, flavorContainer) {
+    if (flavorContainer) {
+        flavorContainer.style.display = 'block';
+    }
+}
 
-//stockProductsContainer.addEventListener('mouseover', showStockFlavorContainer);
-//stockProductsContainer.addEventListener('mouseout', hideStockFlavorContainer);
+function hideStockFlavorContainer(flavorContainer) {
+    if (flavorContainer) { 
+        flavorContainer.style.display = 'none';
+    }
+}
 
-stockProductsContainers.forEach((e) => {
-    e.addEventListener("mouseover", function() {
-        stockFlavorContainers.forEach((element) => {
-            if(element.index === e.index) {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
-        });
-    });
+stockProductsContainers.forEach((productContainer, index) => {
+    const correspondingFlavorContainer = stockFlavorContainers[index - 1];
 
-
+    productContainer.addEventListener('mouseover', () => showStockFlavorContainer(productContainer, correspondingFlavorContainer));
+    
+    productContainer.addEventListener('mouseout', () => hideStockFlavorContainer(correspondingFlavorContainer));
 });

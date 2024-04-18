@@ -1270,21 +1270,7 @@ header {
     border: 1px solid #2C742F;
 }
 
-.stock-flavor-container1, .stock-flavor-container2, .stock-flavor-container3, .stock-flavor-container4, .stock-flavor-container5, .stock-flavor-container6, .stock-flavor-container7, .stock-flavor-container8, .stock-flavor-container9, .stock-flavor-container10 {
-    display: none;
-    padding-left: .572917vw;
-    padding-top: 1.458333vw;
-    width: 6.666667vw;
-    height: 11.71875vw;
-    flex-shrink: 0;
-    border-right: 1px solid #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
-    background: #FFFFFF;
-    flex-direction: column;
-    position: absolute;
-}
-
-.stock-flavor-container11, .stock-flavor-container12, .stock-flavor-container13, .stock-flavor-container14, .stock-flavor-container15, .stock-flavor-container16, .stock-flavor-container17, .stock-flavor-container18, .stock-flavor-container19, .stock-flavor-container20 {
+.stock-flavor-container {
     display: none;
     padding-left: .572917vw;
     padding-top: 1.458333vw;

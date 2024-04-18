@@ -1026,13 +1026,7 @@ header {
     height: 44.468vw;
 }
 
-.stock-flavor-container1, .stock-flavor-container2, .stock-flavor-container3, .stock-flavor-container4, .stock-flavor-container5, .stock-flavor-container6, .stock-flavor-container7, .stock-flavor-container8, .stock-flavor-container9, .stock-flavor-container10 {
-    width: 35.90814vw;
-    height: 44vw;
-    padding: 3.933vw 3.461vw 0 4.593vw;
-}
-
-.stock-flavor-container11, .stock-flavor-container12, .stock-flavor-container13, .stock-flavor-container14, .stock-flavor-container15, .stock-flavor-container16, .stock-flavor-container17, .stock-flavor-container18, .stock-flavor-container19, .stock-flavor-container20 {
+.stock-flavor-container {
     width: 35.90814vw;
     height: 44vw;
     padding: 3.933vw 3.461vw 0 4.593vw;
