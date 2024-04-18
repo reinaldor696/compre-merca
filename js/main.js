@@ -40,6 +40,8 @@ const subcategoryListArrow = document.querySelector("#img-arrow-categories2");
 const priceCategoriesList  = document.querySelector("#price-categories-list");
 const priceCategoriesListArrow  = document.querySelector("#img-arrow-categories3");
 const filterCategoriesMquery = document.querySelector("#filter-categories-mquery");
+const stockProductsContainers = document.querySelectorAll('.stock-products-container');
+const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
 
 function toPage() {
     window.scrollTo(0, 0);
@@ -793,6 +795,7 @@ function buttonBackPanelControl() {
     aboutUs.style.display = "none";
     loyaltyProgram.style.display = "none";
     spinDaily.style.display = "none";
+    spanMenuPanelControlContainer.style.display = "none";
 }
 
 function buttonFilterCategoriesMquery() {
@@ -810,3 +813,21 @@ function closeButtonFilterCategories() {
         filterCategoriesMquery.style.display = "none";
     } 
 }
+
+
+//stockProductsContainer.addEventListener('mouseover', showStockFlavorContainer);
+//stockProductsContainer.addEventListener('mouseout', hideStockFlavorContainer);
+
+stockProductsContainers.forEach((e) => {
+    e.addEventListener("mouseover", function() {
+        stockFlavorContainers.forEach((element) => {
+            if(element.index === e.index) {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    });
+
+
+});

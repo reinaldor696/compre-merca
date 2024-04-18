@@ -141,6 +141,21 @@
                     <path d="M13.4303 15.1522C13.2053 14.927 13.079 14.6217 13.0791 14.3033C13.0792 13.985 13.2058 13.6798 13.4309 13.4548C13.6561 13.2297 13.9614 13.1034 14.2798 13.1035C14.5981 13.1036 14.9033 13.2302 15.1283 13.4554L18.5219 16.8502C18.6366 16.9609 18.728 17.0933 18.7909 17.2397C18.8538 17.3861 18.8869 17.5435 18.8882 17.7029C18.8896 17.8622 18.8593 18.0202 18.7989 18.1677C18.7386 18.3152 18.6495 18.4492 18.5368 18.5618C18.4241 18.6745 18.2902 18.7636 18.1427 18.8239C17.9952 18.8843 17.8372 18.9146 17.6779 18.9133C17.5185 18.9119 17.3611 18.8788 17.2147 18.8159C17.0683 18.753 16.9358 18.6616 16.8251 18.547L13.4303 15.1522Z" fill="black"/>
                   </svg>
 
+                  <div class="shopping-bag-mquery" onclick="sectionShoppingCart()">
+                    <div class="bag-icon">
+                      <div class="item-number">
+                        <span id="counter-item-number">0</span>
+                      </div>
+                      
+                      <img src="./media/icons/header/Bag.png" alt="bag" class="bag-icon2">
+                    </div>
+  
+                    <div class="shopping-info">
+                      <p>Carrito de Compra:</p>
+                      <span>$00.00</span>
+                    </div>
+                  </div>
+
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" onclick="menuNavBarMquery()">
                     <path d="M3 5H21M3 12H21M3 19H21" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -162,12 +177,12 @@
                   <p>Sobre Nosotros</p>
                 </div>
   
-                <div class="contact-nav" onclick="sectionContact()">
-                  <p>Contacto</p>
-                </div>
-  
                 <div class="loyalty-program-nav" onclick="sectionLoyaltyProgram()">
                   <p>Programa de Lealtad</p>
+                </div>
+
+                <div class="contact-nav" onclick="sectionContact()">
+                  <p>Contacto</p>
                 </div>
               </div>
             
@@ -399,7 +414,7 @@
           <!-- Header End -->
 
           <!-- Home -->
-          <div class="home">
+          <section class="home">
             <!-- Content Container1 -->
             <div class="container1">
               <div class="container1-container1">
@@ -934,8 +949,8 @@
               <div class="products-contenet2-container2">
                 <div class="border-content2-container2">
                   <div>
-                    <div class="stock-products-container">
-                      <div class="stock-flavor-container">
+                    <div class="stock-products-container1">
+                      <div class="stock-flavor-container1">
                         <div class="apple-stock">
                           <p>Manzana</p>
 
@@ -946,6 +961,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -959,6 +987,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -972,6 +1013,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -985,6 +1039,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -998,6 +1065,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -1011,6 +1091,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
 
@@ -1024,6 +1117,19 @@
                             </button>
 
                             <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
                           </div>
                         </div>
                       </div>
@@ -1058,8 +1164,192 @@
                 </div>
 
                 <div class="content2-container2">
-                  <div>
-                    <div>
+                  <div class="stock-products-container">
+                    <div class="stock-products-container2">
+                      <div class="stock-flavor-container2">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product5-container2">
                         <img src="./media/icons/content2-home/image 32.png" alt="product">
                       </div>
@@ -1091,7 +1381,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container3">
+                      <div class="stock-flavor-container3">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+                            
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      
                       <div onclick="sectionProductDescription()" class="img1-product6-container2">
                         <img src="./media/icons/content2-home/jumex-tomate.png" alt="product">
                       </div>
@@ -1123,7 +1597,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container">
+                      <div class="stock-flavor-container4">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-produc7-container2">
                         <img src="./media/icons/content2-home/Group 1261154720.png" alt="product">
                       </div>
@@ -1155,7 +1813,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container5">
+                      <div class="stock-flavor-container5">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8460)">
+                                <path d="M7.03628 13.5335C10.5618 13.5335 13.4202 10.6751 13.4202 7.14956C13.4202 3.62403 10.5618 0.765625 7.03628 0.765625C3.51075 0.765625 0.652344 3.62403 0.652344 7.14956C0.652344 10.6751 3.51075 13.5335 7.03628 13.5335Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35771 4.82812L4.71484 9.47099" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35771 9.47099L4.71484 4.82812" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8460">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0717773 0.185547)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-produc7-container2">
                         <img src="./media/icons/content2-home/Group 1261154720.png" alt="product">
                       </div>
@@ -1189,7 +2031,191 @@
               <div class="products-contenet2-container2">
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container6">
+                      <div class="stock-flavor-container6">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product8-container2">
                         <img src="./media/icons/content2-home/Group 1261154723.png" alt="product">
                       </div>
@@ -1221,7 +2247,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container7">
+                      <div class="stock-flavor-container7">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product8-container2">
                         <img src="./media/icons/content2-home/Group 1261154723.png" alt="product">
                       </div>
@@ -1253,7 +2463,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container8">
+                      <div class="stock-flavor-container8">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product9-container2">
                         <img src="./media/icons/content2-home/Group 1261154725.png" alt="product">
                       </div>
@@ -1285,7 +2679,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container9">
+                      <div class="stock-flavor-container9">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product9-container2">
                         <img src="./media/icons/content2-home/Group 1261154725.png" alt="product">
                       </div>
@@ -1317,7 +2895,191 @@
 
                 <div class="content2-container2">
                   <div>
-                    <div>
+                    <div class="stock-products-container10">
+                      <div class="stock-flavor-container10">
+                        <div class="apple-stock">
+                          <p>Manzana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>1</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Fresa & Banana</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Melocotón</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="apple-stock">
+                          <p>Guayaba</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>2</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Pera</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Piña</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="stock">
+                          <p>Mango</p>
+
+                          <div class="stock-container">
+                            <button class="button-plus-stock-container">
+                              <span>0</span>
+                              <img src="./media/icons/content2-home/Group 757.png" alt="plus">
+                            </button>
+
+                            <img class="button-delete-stock-container" src="./media/icons/content2-home/Close.png" alt="delete">
+
+                            <svg class="button-delete-stock-container-mquery" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                              <g clip-path="url(#clip0_1003_8450)">
+                                <path d="M7.03531 13.8773C10.5608 13.8773 13.4192 11.0188 13.4192 7.49331C13.4192 3.96778 10.5608 1.10938 7.03531 1.10938C3.50978 1.10938 0.651367 3.96778 0.651367 7.49331C0.651367 11.0188 3.50978 13.8773 7.03531 13.8773Z" stroke="#E6E6E6" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M9.35673 5.17188L4.71387 9.81474" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.35673 9.81474L4.71387 5.17188" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1003_8450">
+                                  <rect width="13.9286" height="13.9286" fill="white" transform="translate(0.0708008 0.529297)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
                       <div onclick="sectionProductDescription()" class="img1-product10-container2">
                         <img src="./media/icons/content2-home/Group 1261154726.png" alt="product">
                       </div>
@@ -2170,7 +3932,7 @@
             </div>
             </div> 
             <!-- Content Container4 End-->
-          </div>
+          </section>
           <!-- Home End -->
 
           <!-- Sign In -->
@@ -3316,6 +5078,12 @@
                   <p>Subtotal:</p>
   
                   <span>$84.00</span>
+                </div>
+                
+                <div class="tickets-obtained-container">
+                  <p>Tickets Obtenidos</p>
+  
+                  <span>200</span>
                 </div>
   
                 <div class="free-shipping">
@@ -6349,6 +8117,14 @@ Alcanza hitos significativos al<br class="br2-loyalty-program"> realizar más de
                       <p class="text-prize-spin-daily">15% dto. proximo pedido</p>
                     </li>
                   </ul>
+                </div>
+
+                <div class="complete-your-spin-content3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                    <path d="M39.08 34.3771L37.7657 26.5C37.4445 24.5773 36.3728 22.8609 34.7864 21.7283C33.1999 20.5956 31.2285 20.1394 29.3057 20.46L23.1029 21.4943L21.1514 9.80857C21.0017 8.91691 20.5041 8.12115 19.768 7.59613C19.0319 7.07112 18.1175 6.85979 17.2257 7.00857C15.3686 7.31714 14.1114 9.07429 14.4257 10.9343L16.98 26.2486L15.9429 26.6286C15.1763 26.9092 14.492 27.3768 13.9521 27.9891C13.4122 28.6013 13.0338 29.3388 12.8513 30.1344C12.6688 30.93 12.6879 31.7586 12.907 32.545C13.1261 33.3313 13.5381 34.0505 14.1057 34.6371L14.6314 35.18L17.3571 38.0029M5.57143 2L2 5.57143M2 5.57143L5.57143 9.14286M2 5.57143H10.5714M29.8571 2L33.4286 5.57143M33.4286 5.57143L29.8571 9.14286M33.4286 5.57143H24.8571" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+
+                  <h3>COMPLETA TU SPIN DIARIO</h3>
                 </div>
               </div>
             </div>
