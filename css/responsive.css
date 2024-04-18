@@ -260,11 +260,9 @@ header {
     font-weight: 400;
     line-height: 130%;
 }
-.close-bag-menu-nav-button2-mquery img {
+.close-bag-menu-nav-button2-mquery svg {
     width: 16.284vw;
     height: 10.856vw;
-    object-fit: contain;
-    scale: 0.7;
 }
 .buttons-menu-nav-mquery {
     width: 73.069vw;
