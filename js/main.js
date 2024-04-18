@@ -42,6 +42,9 @@ const priceCategoriesListArrow  = document.querySelector("#img-arrow-categories3
 const filterCategoriesMquery = document.querySelector("#filter-categories-mquery");
 const stockProductsContainers = document.querySelectorAll('.stock-products-container');
 const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
+const buttonsLoginRegisterMenuNavMquery = document.querySelector(".buttons-login-register-menu-nav-mquery");
+const buttonLogoutMenuNavMquery = document.querySelector(".button-logout-menu-nav-mquery");
+const closeBagMenuNavButton2Mquery = document.querySelector(".close-bag-menu-nav-button2-mquery");
 
 function toPage() {
     window.scrollTo(0, 0);
@@ -824,6 +827,22 @@ function closeButtonFilterCategories() {
     if (filterCategoriesMquery.style.display === "block") {
         filterCategoriesMquery.style.display = "none";
     } 
+}
+
+function loginMqueryMenu() {
+    closeBagMenuNavButton2Mquery.style.display = "flex";
+    buttonLogoutMenuNavMquery.style.display = "block";
+
+    buttonsLoginRegisterMenuNavMquery.style.display = "none";
+}
+
+function logoutMqueryMenu() {
+    buttonsLoginRegisterMenuNavMquery.style.display = "flex";
+
+    closeBagMenuNavButton2Mquery.style.display = "none";
+    buttonLogoutMenuNavMquery.style.display = "none";
+
+    closeMenuNavBarMquery();
 }
 
 
