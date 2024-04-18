@@ -1285,7 +1285,7 @@ header {
 }
 
 .stock-flavor-container11, .stock-flavor-container12, .stock-flavor-container13, .stock-flavor-container14, .stock-flavor-container15, .stock-flavor-container16, .stock-flavor-container17, .stock-flavor-container18, .stock-flavor-container19, .stock-flavor-container20 {
-    display: block;
+    display: none;
     padding-left: .572917vw;
     padding-top: 1.458333vw;
     width: 6.666667vw;
