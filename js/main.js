@@ -43,6 +43,7 @@ const filterCategoriesMquery = document.querySelector("#filter-categories-mquery
 const buttonsLoginRegisterMenuNavMquery = document.querySelector(".buttons-login-register-menu-nav-mquery");
 const buttonLogoutMenuNavMquery = document.querySelector(".button-logout-menu-nav-mquery");
 const closeBagMenuNavButton2Mquery = document.querySelector(".close-bag-menu-nav-button2-mquery");
+const content2Container2 = document.querySelectorAll(".content2-container2");
 const stockProductsContainers = document.querySelectorAll('.stock-products-container');
 const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
 
@@ -845,12 +846,12 @@ function logoutMqueryMenu() {
     closeMenuNavBarMquery();
 }
 
+
 function showStockFlavorContainer(productContainer, flavorContainer) {
     if (flavorContainer) {
         flavorContainer.style.display = 'block';
     }
 }
-
 function hideStockFlavorContainer(flavorContainer) {
     if (flavorContainer) { 
         flavorContainer.style.display = 'none';
@@ -858,9 +859,15 @@ function hideStockFlavorContainer(flavorContainer) {
 }
 
 stockProductsContainers.forEach((productContainer, index) => {
-    const correspondingFlavorContainer = stockFlavorContainers[index - 1];
+    const correspondingFlavorContainer = stockFlavorContainers[index];
 
     productContainer.addEventListener('mouseover', () => showStockFlavorContainer(productContainer, correspondingFlavorContainer));
     
     productContainer.addEventListener('mouseout', () => hideStockFlavorContainer(correspondingFlavorContainer));
+
+    if (window.matchMedia("(max-width: 479px)").matches) {
+        productContainer.addEventListener('touchstart', () => showStockFlavorContainer(productContainer, correspondingFlavorContainer));
+    
+        productContainer.addEventListener('touchend', () => hideStockFlavorContainer(correspondingFlavorContainer));
+    }
 });
