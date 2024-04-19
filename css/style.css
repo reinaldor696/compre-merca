@@ -1488,7 +1488,7 @@ header {
     height: 2.083333vw;
     cursor: pointer;
     border: none;
-    background-color: #057A10;
+    background-color: #F2F2F2;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1511,6 +1511,10 @@ header {
     justify-content: center;
 }
 .button-bag-product-container2 img {
+    width: 1.041667vw;
+    height: 1.041667vw;
+}
+.button-bag-product-container2 svg {
     width: 1.041667vw;
     height: 1.041667vw;
 }

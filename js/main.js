@@ -43,9 +43,9 @@ const filterCategoriesMquery = document.querySelector("#filter-categories-mquery
 const buttonsLoginRegisterMenuNavMquery = document.querySelector(".buttons-login-register-menu-nav-mquery");
 const buttonLogoutMenuNavMquery = document.querySelector(".button-logout-menu-nav-mquery");
 const closeBagMenuNavButton2Mquery = document.querySelector(".close-bag-menu-nav-button2-mquery");
-const content2Container2 = document.querySelectorAll(".content2-container2");
-const stockProductsContainers = document.querySelectorAll('.stock-products-container');
 const stockFlavorContainers = document.querySelectorAll('.stock-flavor-container');
+const buttonBagProductContainer2 = document.querySelectorAll(".button-bag-product-container2");
+const content2Container2 = document.querySelectorAll(".content2-container2");
 
 function toPage() {
     window.scrollTo(0, 0);
@@ -846,28 +846,55 @@ function logoutMqueryMenu() {
     closeMenuNavBarMquery();
 }
 
-
 function showStockFlavorContainer(productContainer, flavorContainer) {
     if (flavorContainer) {
         flavorContainer.style.display = 'block';
-    }
-}
-function hideStockFlavorContainer(flavorContainer) {
-    if (flavorContainer) { 
-        flavorContainer.style.display = 'none';
+
+        const parentContainer = productContainer.closest('.content2-container2');
+        if (parentContainer) { 
+            parentContainer.style.borderColor = '#2C742F';
+        }
+
+        const hoveredButton = parentContainer.querySelector('.button-bag-product-container2');
+        if (hoveredButton) {
+        hoveredButton.style.backgroundColor = '#057A10';
+        }
+
+        const hoveredButtonBag = parentContainer.querySelectorAll('.button-bag-product-container2 svg');
+        if (hoveredButtonBag) {
+            for (const path of hoveredButtonBag) {
+            path.setAttribute("fill", "#FFFFFF");
+        }
+        }
     }
 }
 
-stockProductsContainers.forEach((productContainer, index) => {
+function hideStockFlavorContainer(productContainer, flavorContainer) {
+    if (flavorContainer) { 
+        flavorContainer.style.display = 'none';
+
+        const parentContainer = productContainer.closest('.content2-container2');
+        parentContainer.style.borderColor = '';
+
+        const hoveredButton = parentContainer.querySelector('.button-bag-product-container2');
+        if (hoveredButton) {
+        hoveredButton.style.backgroundColor = '#F2F2F2';
+        }
+    }
+}
+
+content2Container2.forEach((productContainer, index) => {
     const correspondingFlavorContainer = stockFlavorContainers[index];
 
     productContainer.addEventListener('mouseover', () => showStockFlavorContainer(productContainer, correspondingFlavorContainer));
     
-    productContainer.addEventListener('mouseout', () => hideStockFlavorContainer(correspondingFlavorContainer));
+    productContainer.addEventListener('mouseout', () => hideStockFlavorContainer(productContainer, correspondingFlavorContainer)); 
 
     if (window.matchMedia("(max-width: 479px)").matches) {
         productContainer.addEventListener('touchstart', () => showStockFlavorContainer(productContainer, correspondingFlavorContainer));
     
-        productContainer.addEventListener('touchend', () => hideStockFlavorContainer(correspondingFlavorContainer));
-    }
+        productContainer.addEventListener('touchend', () => hideStockFlavorContainer(productContainer, correspondingFlavorContainer));
+    }  
 });
+
+

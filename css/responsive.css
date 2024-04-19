@@ -1015,8 +1015,13 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: -0.835vw;
+    background-color: #F2F2F2;
 }
 .button-greenbag-product-container2 img {
+    width: 2.73vw;
+    height: 2.989vw;
+}
+.button-greenbag-product-container2 svg {
     width: 2.73vw;
     height: 2.989vw;
 }
@@ -1027,7 +1032,7 @@ header {
 }
 
 .stock-flavor-container {
-    width: 35.90814vw;
+    width: 35.7vw;
     height: 44vw;
     padding: 3.933vw 3.461vw 0 4.593vw;
 }
@@ -1144,6 +1149,11 @@ header {
     margin-bottom: -0.835vw;
 }
 #button-bag-product-container2-mquery img {
+    width: 2.73vw;
+    height: 2.989vw;
+    display: block;
+}
+#button-bag-product-container2-mquery svg {
     width: 2.73vw;
     height: 2.989vw;
     display: block;
@@ -1282,11 +1292,11 @@ header {
     margin-left: 10vw;
 }
 
-.button-bag-product-container2 {
+.button-bag-product-container2{
     width: 3.132vw;
     height: 3.34vw;
-    padding: 0.835vw 1.044vw 1.044vw 0.835vw;
 } 
+
 .button-bag-product-container2 img {
     display: none;
 }
