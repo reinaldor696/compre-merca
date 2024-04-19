@@ -1008,6 +1008,16 @@ header {
     height: 2.505vw;
 }
 
+.svg-plus-stock-container {
+    width: 1.253vw;
+    height: 1.253vw;
+}
+
+.svg-minus-stock-container {
+    width: 1.253vw;
+    height: 1.253vw;
+}
+
 .button-greenbag-product-container2 {
     width: 7.098vw;
     height: 7.098vw;
@@ -1064,11 +1074,11 @@ header {
 }
 
 .button-plus-stock-container {
-    width: 5.816vw;
-    height: 2.908vw;
+    width: 7vw;
+    height: 3vw;
     border-radius: 35.491vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .button-plus-stock-container span {
@@ -1097,7 +1107,7 @@ header {
 }
 
 .button-delete-stock-container-mquery {
-    display: block;
+    display: none;
     width: 2.908vw;
     height: 2.908vw;
     margin-left: 0.873vw;
@@ -1284,18 +1294,19 @@ header {
 
 .margin1-button-bag-product {
     margin-left: 3.967vw;
+    width: 3.132vw;
+    height: 3.34vw;
 }
 .margin2-button-bag-product {
     margin-left: 3.34vw;
+    width: 3.132vw;
+    height: 3.34vw;
 }
 .margin3-button-bag-product {
     margin-left: 10vw;
-}
-
-.button-bag-product-container2{
     width: 3.132vw;
     height: 3.34vw;
-} 
+}
 
 .button-bag-product-container2 img {
     display: none;

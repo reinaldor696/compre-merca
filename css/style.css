@@ -1325,13 +1325,14 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 1.145833vw;
-    height: .625vw;
+    width: 1.9vw;
+    height: .72vw;
     border-radius: 8.854167vw;
     border: 1px solid #E6E6E6;
     background: #FFFFFF;
     cursor: pointer;
     justify-content: center;
+    gap: .15625vw;
 }
 .button-plus-stock-container span {
     text-align: center;
@@ -1483,6 +1484,18 @@ header {
     margin-left: .260417vw;
 }
 
+.svg-plus-stock-container {
+    width: .416667vw;
+    height: .416667vw;
+    cursor: pointer;
+}
+
+.svg-minus-stock-container {
+    width: .416667vw;
+    height: .416667vw;
+    cursor: pointer;
+}
+
 .button-greenbag-product-container2 {
     width: 2.083333vw;
     height: 2.083333vw;
@@ -1497,6 +1510,14 @@ header {
 .button-greenbag-product-container2 img {
     width: 1.041667vw;
     height: 1.041667vw;
+}
+.button-greenbag-product-container2 svg {
+    width: 1.041667vw;
+    height: 1.041667vw;
+}
+
+.button-delete-stock-container {
+    display: none;
 }
 
 .button-bag-product-container2 {
