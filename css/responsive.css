@@ -837,12 +837,14 @@ header {
     display: block;
 }
 
-.oil-product-content3-container2 h4, .discount-text, .discount-text2, .button-discount-content3-container2, .img-bottle {
+.oil-product-content3-container2 h4, .discount-text, .discount-text2, .img-bottle {
     display: none;
 }
 
 .oil-product-content3-container2 {
     margin-left: 1.461vw;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .oil-product-content3-container2-mquery {
@@ -860,9 +862,36 @@ header {
     height: 3.967vw;
 }
 
-.button-discount-content3-container2-mquery {
+.button-discount-content3-container2 {
     margin-top: 3.34vw;
-    display: flex;
+}
+
+.button-content3-container3 {
+    width: 15.658vw;
+    height: 3.967vw;
+}
+.button-content3-container3 p {
+    font-size: 1.2vw;
+}
+.button-content3-container3 img {
+    width: 1.804vw;
+    height: 1.451vw;
+}
+
+.img-ticket-product-container3 {
+    gap: .39vw
+}
+.img-ticket-product-container3 p {
+    font-size: 1.1vw;
+}
+.img-ticket-product-container3 img {
+    width: 2.338vw;
+    height: 2.171vw;
+}
+
+.button-discount-content3-container2-mquery {
+    display: none;
+    margin-top: 3.34vw;
     flex-direction: row;
     align-items: center;
     gap: 1.848vw;
