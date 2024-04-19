@@ -1324,7 +1324,7 @@ header {
 .button-plus-stock-container {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 1.9vw;
     height: .72vw;
     border-radius: 8.854167vw;
